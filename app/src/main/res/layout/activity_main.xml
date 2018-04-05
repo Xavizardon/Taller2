@@ -5,25 +5,32 @@
     android:stretchColumns="1"
     android:padding="8dp">
 
-    <TableRow>
+    <TableRow
+        android:layout_weight="1">
+
         <LinearLayout
-            android:orientation="vertical"
-            android:background="#64d8cb"
+            android:layout_width="177dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="4dp"
-            android:layout_marginRight="4dp">
+            android:layout_marginRight="4dp"
+
+            android:background="#64d8cb"
+            android:orientation="vertical">
 
             <ImageView
-                android:layout_width="184dp"
-                android:layout_height="152dp"
-                android:src="@drawable/settings"
-                />
+                android:layout_width="145dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/settings" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Configuracion"
-                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:text="@string/text_settings"
                 android:textColor="#FFFFFF"
-                android:layout_gravity="center"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -31,7 +38,8 @@
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="4dp"
             android:background="#338a3e"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -43,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Perfil"
+                android:text="@string/text_profile"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -51,10 +59,11 @@
 
 
 
-    <TableRow>
+    <TableRow
+        android:layout_weight="1">
 
         <LinearLayout
-            android:layout_height="164dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="4dp"
             android:layout_marginRight="4dp"
             android:layout_marginTop="4dp"
@@ -62,8 +71,8 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="132dp"
-                android:layout_height="112dp"
+                android:layout_width="145dp"
+                android:layout_height="116dp"
                 android:layout_gravity="center"
                 android:src="@drawable/folder" />
 
@@ -71,13 +80,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Favoritos"
+                android:text="@string/text_favorites"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
-            android:layout_height="163dp"
+            android:layout_height="match_parent"
             android:layout_marginBottom="4dp"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="4dp"
@@ -86,7 +95,7 @@
 
             <ImageView
                 android:layout_width="134dp"
-                android:layout_height="112dp"
+                android:layout_height="117dp"
                 android:layout_gravity="center"
                 android:src="@drawable/ingresos" />
 
@@ -95,7 +104,6 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/text_income"
-                edit
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -103,7 +111,8 @@
     </TableRow>
 
 
-    <TableRow>
+    <TableRow
+        android:layout_weight="1">
 
         <LinearLayout
             android:layout_height="match_parent"
@@ -115,36 +124,38 @@
             <ImageView
                 android:layout_width="132dp"
                 android:layout_height="112dp"
+                android:layout_marginTop="4dp"
                 android:layout_gravity="center"
-                android:src="@drawable/folder" />
-
+                android:src="@drawable/calculator"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Settings"
+                android:text="@string/text_budget"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
-            android:orientation="vertical"
-            android:background="#c51162"
+            android:layout_height="match_parent"
             android:layout_marginLeft="4dp"
-            android:layout_marginTop="4dp">
+            android:layout_marginTop="4dp"
+            android:background="#c51162"
+            android:orientation="vertical">
+
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/profile"
+                android:layout_height="115dp"
                 android:layout_gravity="center"
-                />
+                android:src="@drawable/egreso" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Perfil"
                 android:layout_gravity="center"
+                android:text="@string/text_outcome"
                 android:textColor="#FFFFFF"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
     </TableRow>
